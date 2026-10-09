@@ -76,7 +76,7 @@ class PlanificadorFuerzaLaboral:
     def guardar_txt(self, archivo):
         with open(archivo, 'w', encoding='utf-8') as f:
             f.write("\n".join(self.bitacora))
-        print(f"\n[OK] Resultados guardados en '{archivo}' para subir a Acrópolis.")
+        print(f"\n[OK] Resultados guardados en '{archivo}'.")
 
 
 if __name__ == "__main__":
