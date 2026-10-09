@@ -1,0 +1,51 @@
+=== OPTIMIZACIÓN DE FUERZA LABORAL ===
+
+--- Semana 5 | Requerimiento: 6 ---
+Previo | Actual | C.Contrato | C.Exceso  | Futuro  | C.Total | Opt
+4      | 6      | 800        | 0         | 0       | 800     | <--
+5      | 6      | 600        | 0         | 0       | 600     | <--
+6      | 6      | 0          | 0         | 0       | 0       | <--
+7      | 6      | 0          | 0         | 0       | 0       | <--
+8      | 6      | 0          | 0         | 0       | 0       | <--
+
+--- Semana 4 | Requerimiento: 4 ---
+Previo | Actual | C.Contrato | C.Exceso  | Futuro  | C.Total | Opt
+8      | 4      | 0          | 0         | 800     | 800     | 
+8      | 5      | 0          | 300       | 600     | 900     | 
+8      | 6      | 0          | 600       | 0       | 600     | <--
+8      | 7      | 0          | 900       | 0       | 900     | 
+8      | 8      | 0          | 1200      | 0       | 1200    | 
+
+--- Semana 3 | Requerimiento: 8 ---
+Previo | Actual | C.Contrato | C.Exceso  | Futuro  | C.Total | Opt
+7      | 8      | 600        | 0         | 600     | 1200    | <--
+8      | 8      | 0          | 0         | 600     | 600     | <--
+
+--- Semana 2 | Requerimiento: 7 ---
+Previo | Actual | C.Contrato | C.Exceso  | Futuro  | C.Total | Opt
+5      | 7      | 800        | 0         | 1200    | 2000    | 
+5      | 8      | 1000       | 300       | 600     | 1900    | <--
+6      | 7      | 600        | 0         | 1200    | 1800    | 
+6      | 8      | 800        | 300       | 600     | 1700    | <--
+7      | 7      | 0          | 0         | 1200    | 1200    | <--
+7      | 8      | 600        | 300       | 600     | 1500    | 
+8      | 7      | 0          | 0         | 1200    | 1200    | 
+8      | 8      | 0          | 300       | 600     | 900     | <--
+
+--- Semana 1 | Requerimiento: 5 ---
+Previo | Actual | C.Contrato | C.Exceso  | Futuro  | C.Total | Opt
+0      | 5      | 1400       | 0         | 1900    | 3300    | <--
+0      | 6      | 1600       | 300       | 1700    | 3600    | 
+0      | 7      | 1800       | 600       | 1200    | 3600    | 
+0      | 8      | 2000       | 900       | 900     | 3800    | 
+
+--- POLÍTICA ÓPTIMA ---
+Costo Total: $3300
+
+Semana 1: Tenía 0 -> Contrata a 5 (Req: 5)
+Semana 2: Tenía 5 -> Contrata a 8 (Req: 7)
+Semana 3: Tenía 8 -> Mantiene/Reduce a 8 (Req: 8)
+Semana 4: Tenía 8 -> Mantiene/Reduce a 6 (Req: 4)
+Semana 5: Tenía 6 -> Mantiene/Reduce a 6 (Req: 6)
+
+[OK] Resultados guardados en 'Salida_FuerzaLaboral.txt' para subir a Acrópolis.
